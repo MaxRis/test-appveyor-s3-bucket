@@ -38,7 +38,7 @@ deploy:
       secure: n30X8NwSNcJTZ3BSfTDstCseaSYY76UCbzNn7mthopg=
     secret_access_key:
       secure: ehq6uYk/Yl5blRknYN3mAxsSI6bMtlUhX+3wGjDBz4P++e2uVRrZV5jKDRlSiuTb
-    bucket: pyarrow_uploader
+    bucket: test-pyarrow-bucket
     folder: test
     artifact: "README.md"
     region: eu-central-1
