@@ -43,4 +43,6 @@ deploy:
     artifact: "README.md"
     region: eu-central-1
     set_public: true
+    on:
+      branch: master
 
