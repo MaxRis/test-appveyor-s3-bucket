@@ -40,5 +40,6 @@ deploy:
       secure: ehq6uYk/Yl5blRknYN3mAxsSI6bMtlUhX+3wGjDBz4P++e2uVRrZV5jKDRlSiuTb
     bucket: pyarrow_uploader 
     artifact: "README.md"
+    region: eu-central-1
     set_public: true
 
