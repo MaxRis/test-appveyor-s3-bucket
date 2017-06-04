@@ -34,7 +34,7 @@ build_script:
   - git config core.symlinks true
 
 after_build:
-  7z a pyarrow_$(python_version).zip dist\*.whl
+  7z a pyarrow_%python_version%.zip dist\*.whl
 
 artifacts:
 - path: pyarrow_$(python_version).zip
