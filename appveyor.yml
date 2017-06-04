@@ -34,6 +34,7 @@ build_script:
 
 artifacts:
 - path: 'dist\*.whl'
+  name: python_wheel
 
 deploy:
   - provider: S3
@@ -42,7 +43,7 @@ deploy:
       secure: ehq6uYk/Yl5blRknYN3mAxsSI6bMtlUhX+3wGjDBz4P++e2uVRrZV5jKDRlSiuTb
     bucket: test-pyarrow-bucket
     # folder: test
-    artifact: 'dist\*.whl'
+    artifact: python_wheel
     region: eu-central-1
     set_public: true
     on:
