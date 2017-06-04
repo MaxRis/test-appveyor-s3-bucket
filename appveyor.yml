@@ -26,6 +26,7 @@ environment:
   MSVC_DEFAULT_OPTIONS: ON
   BOOST_ROOT: C:\Libraries\boost_1_63_0
   BOOST_LIBRARYDIR: C:\Libraries\boost_1_63_0\lib64-msvc-14.0
+  python_version: 0.5.0
 
 init:
 
@@ -33,10 +34,10 @@ build_script:
   - git config core.symlinks true
 
 after_build:
-  7z a pyarrow_version.zip dist\*.whl
+  7z a pyarrow_$(python_version).zip dist\*.whl
 
 artifacts:
-- path: pyarrow_version.zip
+- path: pyarrow_$(python_version).zip
   name: python_wheel
 
 deploy:
