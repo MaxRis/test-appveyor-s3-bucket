@@ -31,7 +31,7 @@ environment:
 
 build_script:
   - git config core.symlinks true
-  - ps: wget "https://github.com/apache/arrow/archive/$($env:pyarrow_commit).zip" -OutFile C:\apache-arrow\apache-arrow.zip
+  - ps: wget https://github.com/apache/arrow/archive/$($env:pyarrow_commit).zip -OutFile C:\apache-arrow\apache-arrow.zip
 
 after_build:
   7z a pyarrow_%python_version%.zip dist\*.whl
