@@ -43,7 +43,7 @@ deploy:
     access_key_id: AKIAJBP6HPINACFCSMZA
     secret_access_key:
       secure: ehq6uYk/Yl5blRknYN3mAxsSI6bMtlUhX+3wGjDBz4P++e2uVRrZV5jKDRlSiuTb
-    bucket: test-pyarrow-bucket
+    bucket: test-pyarrow-bicket-2
     folder:
     artifact: python_wheel
     region: eu-central-1
