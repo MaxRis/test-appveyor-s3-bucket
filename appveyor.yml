@@ -42,7 +42,7 @@ deploy:
     secret_access_key:
       secure: ehq6uYk/Yl5blRknYN3mAxsSI6bMtlUhX+3wGjDBz4P++e2uVRrZV5jKDRlSiuTb
     bucket: test-pyarrow-bucket
-    # folder: test
+    folder:
     artifact: python_wheel
     region: eu-central-1
     set_public: true
