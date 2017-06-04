@@ -26,12 +26,10 @@ environment:
   MSVC_DEFAULT_OPTIONS: ON
   BOOST_ROOT: C:\Libraries\boost_1_63_0
   BOOST_LIBRARYDIR: C:\Libraries\boost_1_63_0\lib64-msvc-14.0
-  python_version: 0.5.0
-  pyarrow_commit: 0576ff55ca9376dcb3c169046e22c403624cc57c
+  python_version: 0.6.0
 
 build_script:
   - git config core.symlinks true
-  - ps: wget https://github.com/apache/arrow/archive/$($env:pyarrow_commit).zip -OutFile C:\apache-arrow\apache-arrow.zip
 
 after_build:
   7z a pyarrow_%python_version%.zip dist\*.whl
