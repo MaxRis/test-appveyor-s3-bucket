@@ -33,7 +33,7 @@ build_script:
   - git config core.symlinks true
 
 artifacts:
-- path: 'README.md'
+- path: 'dist\*.whl'
 
 deploy:
   - provider: S3
@@ -42,7 +42,7 @@ deploy:
       secure: ehq6uYk/Yl5blRknYN3mAxsSI6bMtlUhX+3wGjDBz4P++e2uVRrZV5jKDRlSiuTb
     bucket: test-pyarrow-bucket
     # folder: test
-    artifact: "README.md"
+    artifact: 'dist\*.whl'
     region: eu-central-1
     set_public: true
     on:
