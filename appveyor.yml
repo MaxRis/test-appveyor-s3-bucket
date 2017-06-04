@@ -32,8 +32,11 @@ init:
 build_script:
   - git config core.symlinks true
 
+after_build:
+  7z a pyarrow_version.zip dist\*.whl
+
 artifacts:
-- path: 'dist\*.whl'
+- path: pyarrow_version.zip
   name: python_wheel
 
 deploy:
