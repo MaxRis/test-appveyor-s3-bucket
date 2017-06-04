@@ -29,7 +29,7 @@ environment:
   python_version: 0.5.0
 
 init:
-- ps: wget "https://github.com/apache/arrow/archive/$env:python_version.zip" -OutFile C:\apache-arrow\apache-arrow.zip
+- ps: wget "https://github.com/apache/arrow/archive/$($env:python_version).zip" -OutFile C:\apache-arrow\apache-arrow.zip
 
 build_script:
   - git config core.symlinks true
