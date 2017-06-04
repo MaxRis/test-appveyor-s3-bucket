@@ -44,6 +44,7 @@ deploy:
     # folder: test
     artifact: "README.md"
     region: eu-central-1
+    folder: test
     set_public: true
     on:
       branch: master
